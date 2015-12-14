@@ -1,3 +1,3 @@
-function initialize() {
-
+function underconstruction() {
+    $("body").load("underconstruction.html");
 }
