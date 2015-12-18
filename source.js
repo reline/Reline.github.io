@@ -6,14 +6,24 @@ $(document).ready(function() {
     $.ajax({
         type: "GET",
         url: "http://cors.io/?u=https://github.com/Reline.atom",
-        // dataType: "html",
         cache: false,
         success: function(result) {
             console.log("Reline.atom loaded");
 
-            var xmlString = $("<span />", { html: result }).text();
+            var atom = $("<span />", { html: result }).text();
+            var githubActivity = $("#githubActivity");
+            githubActivity.html(atom);
+            var children = githubActivity.children();
+            githubActivity.html(children);
 
-            $("#githubActivity").html(xmlString);
+            $('a').each(function () {
+                var href = $(this).attr('href');
+
+                if (href) {
+                    href = "https://github.com" + href;
+                    $(this).attr('href', href);
+                }
+            });
         },
         async: true
     })
