@@ -1,8 +1,6 @@
 $(document).ready(function() {
-    $("body").load("underconstruction.html")
-});
+    $("body").load("underconstruction.html");
 
-$(document).ready(function() {
     $.ajax({
         type: "GET",
         url: "http://cors.io/?u=https://github.com/Reline.atom",
@@ -28,3 +26,9 @@ $(document).ready(function() {
         async: true
     })
 });
+
+function getAllMethods(object) {
+    return Object.getOwnPropertyNames(object).filter(function(property) {
+        return typeof object[property] == 'function';
+    });
+}

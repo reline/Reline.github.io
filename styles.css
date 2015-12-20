@@ -9,6 +9,7 @@ h3, h4 {
     color: #111;
 }
 
+/* navigation */
 .navbar {
     font-family: Droid Sans, sans-serif;
     margin-bottom: 0;
@@ -32,6 +33,7 @@ h3, h4 {
     border-color: transparent;
 }
 
+/* header */
 .jumbotron {
     text-align: center;
     margin-top: 5em;
@@ -53,6 +55,27 @@ h3, h4 {
     color: #000;
 }
 
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid darkred;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkred;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: red;
+}
+
+/* rss feed */
 .rss-feed {
     overflow: hidden;
     padding-right: 2%;
@@ -72,6 +95,7 @@ h3, h4 {
     visibility: visible;
 }
 
+/* footer */
 footer {
     background-color: #2d2d30;
     color: #f5f5f5;
