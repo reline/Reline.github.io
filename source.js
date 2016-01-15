@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("body").load("underconstruction.html");
+    // $("body").load("underconstruction.html");
 
     $.ajax({
         type: "GET",
@@ -14,7 +14,7 @@ $(document).ready(function() {
             var children = githubActivity.children();
             githubActivity.html(children);
 
-            $('a').each(function () {
+            $('a[href*="/Reline"]').each(function () {
                 var href = $(this).attr('href');
 
                 if (href) {
