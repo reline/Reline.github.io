@@ -14,6 +14,7 @@ $(document).ready(function() {
             var children = githubActivity.children();
             githubActivity.html(children);
 
+            // use classes instead of regex
             $('a[href*="/Reline"]').each(function () {
                 var href = $(this).attr('href');
 
