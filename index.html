@@ -23,74 +23,130 @@
     - your email address as your contact info;
     - one paragraph (SHORT), explaining the purpose of your portfolio;-->
 
-        <div class="main">
-            <!-- Navbar -->
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a href="index.html">
-                            <img src="res/Reline_logo.png" class="logo img-responsive"/>
-                        </a>
-                        <a class="navbar-brand" href="index.html">Nathan Reline - Software Developer</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="objectives.html">Objectives</a></li>
-                            <li><a href="sip.html">SIP</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="resume.html">Resume</a></li>
-                            <!--<li><a href="contact.html">Contact</a></li>-->
-                        </ul>
-                    </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- LOGO GOES HERE -->
+                    <a class="navbar-brand" href="index.html">Nathan Reline - Software Developer</a>
                 </div>
-            </nav>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="objectives.html">Objectives</a></li>
+                        <li><a href="sip.html">SIP</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <!--<li><a href="contact.html">Contact</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-            <!-- Body -->
-            <div class="jumbotron">
-                <h1>I'm a general-purpose developer</h1>
+        <!-- Body -->
+        <div class="jumbotron">
+            <h1>I'm a general-purpose developer</h1>
+        </div>
+
+        <div class="col-md-1"></div>
+        <div class="container col-md-8">
+
+            <h2>Contact Me</h2>
+
+            <div class="col-md-4">
+                <img class="img-responsive img-circle" src="res/profile_pic.jpg">
             </div>
 
-            <div>
-                <div class="col-md-1"></div>
-                <div class="container col-md-8">
+            <div class="col-md-8 contact-info">
+                <img src="res/github_logo.png" style="width: 35px;">
+                <h3 class="contact-link"><a href="/Reline">GitHub</a></h3>
+                <br><br>
 
-                    <h2>Contact Me</h2>
+                <img src="res/linkedin_logo.png" style="width: 35px;">
+                <h3 class="contact-link"><a href="https://www.linkedin.com/in/nathanreline">LinkedIn</a></h3>
+                <br><br>
 
-                    <div class="col-md-4">
-                        <img class="img-responsive img-circle" src="res/profile_pic.jpg">
+                <img src="res/stackoverflow_logo.png" style="width: 35px;">
+                <h3 class="contact-link"><a href="http://stackoverflow.com/users/4780750/reline">StackOverflow</a></h3>
+                <br><br>
+
+                <img src="res/gmail_logo.png" style="width: 35px;">
+                <h3 class="contact-link"><a href="mailto:nathanielreline@gmail.com">Gmail</a></h3>
+            </div>
+
+
+
+
+            <!--<h2>Here's just a bit of what I can do</h2>
+
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default" data-toggle="collapse" data-parent="#accordion" href="#collapse1" onmouseover="this.style.cursor='pointer'">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <div>Java</div>
+                        </h4>
                     </div>
-
-                    <div class="col-md-8 contact-info">
-                        <img src="res/github_logo.png" style="width: 35px;">
-                        <h3 class="contact-link"><a href="/Reline">GitHub</a></h3>
-                        <br><br>
-
-                        <img src="res/linkedin_logo.png" style="width: 35px;">
-                        <h3 class="contact-link"><a href="https://www.linkedin.com/in/nathanreline">LinkedIn</a></h3>
-                        <br><br>
-
-                        <img src="res/stackoverflow_logo.png" style="width: 35px;">
-                        <h3 class="contact-link"><a href="http://stackoverflow.com/users/4780750/reline">StackOverflow</a></h3>
-                        <br><br>
-
-                        <img src="res/gmail_logo.png" style="width: 35px;">
-                        <h3 class="contact-link"><a href="mailto:nathanielreline@gmail.com">Gmail</a></h3>
-                    </div>
-                </div>
-
-                <div class="rss-feed col-md-3 hidden-sm hidden-xs">
-                    <div class="well" style="text-align: center">
-                        <h2>GitHub Activity</h2>
-                    </div>
-                    <div class="github-container row">
-                        <div id="githubActivity" class="github "></div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">I can do things with coffee</div>
                     </div>
                 </div>
+                <div class="panel panel-default" data-toggle="collapse" data-parent="#accordion" href="#collapse2" onmouseover="this.style.cursor='pointer'">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <div>C++</div>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">Memory allocation is great...</div>
+                    </div>
+                </div>
+                <div class="panel panel-default" data-toggle="collapse" data-parent="#accordion" href="#collapse3" onmouseover="this.style.cursor='pointer'">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <div>C#</div>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">Gooey GUIs</div>
+                    </div>
+                </div>
+                <div class="panel panel-default" data-toggle="collapse" data-parent="#accordion" href="#collapse4" onmouseover="this.style.cursor='pointer'">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <div>MySQL</div>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <div class="panel-body">I'll show you what we got in the back</div>
+                    </div>
+                </div>
+                <div class="panel panel-default" data-toggle="collapse" data-parent="#accordion" href="#collapse5" onmouseover="this.style.cursor='pointer'">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <div>Python</div>
+                        </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                        <div class="panel-body">Everybody starts somewhere</div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+
+        <div class="rss-feed col-md-3 hidden-sm hidden-xs">
+            <div class="well" style="text-align: center">
+                <h2>GitHub Activity</h2>
+            </div>
+            <div class="github-container row">
+                <div id="githubActivity" class="github "></div>
             </div>
         </div>
+
+
+
+
         <!-- Footer -->
-        <footer class="navbar-fixed-bottom text-center">
-            Website made by Nathan Reline
+        <footer class="text-center navbar-fixed-bottom">
+            <p>Website made by Nathan Reline</p>
         </footer>
 
     </body>

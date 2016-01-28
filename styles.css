@@ -1,7 +1,6 @@
 body {
     font: 400 15px/1.8 'Source Sans Pro', sans-serif, Trebuchet, Veranda, Geneva;
     color: #777;
-    margin-top: 3%;
 }
 
 h3, h4 {
@@ -10,13 +9,10 @@ h3, h4 {
     color: #111;
 }
 
-.main {
-    margin-bottom: 5%;
-}
-
 /* navigation */
 .navbar {
     font-family: Droid Sans, sans-serif, Trebuchet, Veranda, Geneva;
+    margin-bottom: 0;
     background-color: #8b0000; /*#2d2d30;*/
     border: 0;
     font-size: 14px !important;
@@ -35,13 +31,6 @@ h3, h4 {
 }
 .navbar-default .navbar-toggle {
     border-color: transparent;
-}
-
-.logo {
-    float: left;
-    padding: 5px;
-    margin-right: 10px;
-    height: 40px;
 }
 
 /* header */
@@ -99,7 +88,6 @@ h3, h4 {
 .rss-feed {
     overflow: hidden;
     padding-right: 2%;
-    padding-bottom: 5%;
 }
 
 .github-container {
@@ -120,6 +108,14 @@ h3, h4 {
 footer {
     background-color: #2d2d30;
     color: #f5f5f5;
-    padding: 8px;
-    float: right;
+    padding: 32px;
+    position: relative;
+    bottom: 0;
+}
+footer a {
+    color: #f5f5f5;
+}
+footer a:hover {
+    color: #777;
+    text-decoration: none;
 }

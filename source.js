@@ -24,9 +24,6 @@ $(document).ready(function() {
                 }
             });
         },
-        error: function (err) {
-            console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
-        },
         async: true
     })
 });
