@@ -117,14 +117,6 @@ h3, h4 {
     max-height: 440px;
 }
 
-.github {
-    visibility: hidden;
-}
-
-.github * {
-    visibility: visible;
-}
-
 /* footer */
 footer {
     background-color: #2d2d30;

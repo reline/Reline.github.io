@@ -1,12 +1,16 @@
 $(document).ready(function() {
     // $("body").load("underconstruction.html");
 
+    githubFeed("Reline");
+});
+
+function githubFeed($user) { // string param for GitHub username
     $.ajax({
         type: "GET",
-        url: "http://cors.io/?u=https://github.com/Reline.atom",
+        url: "http://cors.io/?u=https://github.com/" + $user + ".atom",
         cache: false,
         success: function(result) {
-            console.log("Reline.atom loaded");
+            console.log($user + ".atom loaded");
 
             var atom = $("<span />", { html: result }).text();
             var githubActivity = $("#githubActivity");
@@ -14,13 +18,13 @@ $(document).ready(function() {
             var children = githubActivity.children();
             githubActivity.html(children);
 
-            // use classes instead of regex
-            $('a[href*="/Reline"]').each(function () {
+            $('.github a').each(function () {
                 var href = $(this).attr('href');
 
                 if (href) {
                     href = "https://github.com" + href;
                     $(this).attr('href', href);
+                    $(this).attr('target', "_blank");
                 }
             });
         },
@@ -29,10 +33,4 @@ $(document).ready(function() {
         },
         async: true
     })
-});
-
-function getAllMethods(object) {
-    return Object.getOwnPropertyNames(object).filter(function(property) {
-        return typeof object[property] == 'function';
-    });
 }
