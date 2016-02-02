@@ -18,47 +18,55 @@
 
     <body>
 
-        <div class="main">
-            <!-- Navbar -->
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a href="index.html">
-                            <img src="res/Reline_logo.png" class="logo img-responsive"/>
-                        </a>
-                        <a class="navbar-brand" href="index.html">Nathan Reline - Software Developer</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="objectives.html">Objectives</a></li>
-                            <li><a href="sip.html">SIP</a></li>
-                            <li class="active"><a href="projects.html">Projects</a></li>
-                            <li><a href="resume.html">Resume</a></li>
-                            <!--<li><a href="contact.html">Contact</a></li>-->
-                        </ul>
-                    </div>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="res/Reline_logo.png" class="logo pull-left"/>Nathan Reline</a>
                 </div>
-            </nav>
 
-            <!-- Body -->
-            <div class="jumbotron">
-                <h1>Everything in one spot</h1>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="objectives.html">Objectives</a></li>
+                        <li><a href="sip.html">SIP</a></li>
+                        <li class="active"><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
             </div>
+        </nav>
 
-            <div class="col-md-9"></div>
+        <!-- Body -->
+        <div class="jumbotron">
+            <h1>Projects</h1>
+        </div>
 
-            <div class="rss-feed col-md-3 hidden-sm hidden-xs">
-                <div class="well" style="text-align: center">
-                    <h2>GitHub Activity</h2>
+        <div class="main">
+            <div>
+                <div class="col-md-1"></div>
+                <div class="container col-md-7 col-lg-8">
+
                 </div>
-                <div class="github-container row">
-                    <div id="githubActivity" class="github "></div>
+
+                <div class="rss-feed hidden-xs hidden-sm col-md-4 col-lg-3">
+                    <div class="well" style="text-align: center">
+                        <h2>GitHub Activity</h2>
+                    </div>
+                    <div class="github-container row">
+                        <div id="githubActivity" class="github "></div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Footer -->
-        <footer class="text-center navbar-fixed-bottom">
+        <footer class="navbar-fixed-bottom text-center">
             Website made by Nathan Reline
         </footer>
 

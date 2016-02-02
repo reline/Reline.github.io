@@ -18,49 +18,58 @@
 
     <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">Nathan Reline - Software Developer</a>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="res/Reline_logo.png" class="logo pull-left"/>Nathan Reline</a>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="objectives.html">Objectives</a></li>
+                        <li><a href="sip.html">SIP</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="objectives.html">Objectives</a></li>
-                    <li><a href="sip.html">SIP</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <!--<li><a href="contact.html">Contact</a></li>-->
-                </ul>
+        </nav>
+
+        <!-- Body -->
+        <div class="jumbotron">
+            <h1>SIP Elevator Video</h1>
+        </div>
+
+        <div class="main">
+            <div>
+                <div class="col-md-3 col-lg-3"></div>
+                <div class="container col-md-6 col-lg-6">
+                    <iframe width="560px" height="315px" src="https://www.youtube.com/embed/76TkmZlJ9sA?modestbranding=1"
+                            frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="rss-feed hidden-xs hidden-sm hidden-md col-lg-3">
+                    <div class="well" style="text-align: center">
+                        <h2>GitHub Activity</h2>
+                    </div>
+                    <div class="github-container row">
+                        <div id="githubActivity" class="github "></div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
 
-    <!-- Body -->
-    <div class="jumbotron">
-        <h1>SIP Elevator Video</h1>
-    </div>
-
-    <div class="col-md-3"></div>
-
-    <div class="container col-md-6">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/76TkmZlJ9sA?modestbranding=1"
-                frameborder="0" allowfullscreen></iframe>
-    </div>
-
-    <div class="rss-feed col-md-3 hidden-sm hidden-xs">
-        <div class="well" style="text-align: center">
-            <h2>GitHub Activity</h2>
-        </div>
-        <div class="github-container row">
-            <div id="githubActivity" class="github "></div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="text-center navbar-fixed-bottom">
-        <p>Website made by Nathan Reline</p>
-    </footer>
+        <!-- Footer -->
+        <footer class="navbar-fixed-bottom text-center">
+            Website made by Nathan Reline
+        </footer>
 
     </body>
 </html>

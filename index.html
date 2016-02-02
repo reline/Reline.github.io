@@ -17,68 +17,64 @@
     </head>
 
     <body>
-    <!-- - your logo;
-    - your name; CHECK
-    - your title; CHECK
-    - your email address as your contact info;
-    - one paragraph (SHORT), explaining the purpose of your portfolio;-->
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="res/Reline_logo.png" class="logo pull-left"/>Nathan Reline</a>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="objectives.html">Objectives</a></li>
+                        <li><a href="sip.html">SIP</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <!-- Body -->
+        <div class="jumbotron">
+            <h1>I'm a general-purpose developer</h1>
+        </div>
 
         <div class="main">
-            <!-- Navbar -->
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a href="index.html">
-                            <img src="res/Reline_logo.png" class="logo img-responsive"/>
-                        </a>
-                        <a class="navbar-brand" href="index.html">Nathan Reline - Software Developer</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="objectives.html">Objectives</a></li>
-                            <li><a href="sip.html">SIP</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="resume.html">Resume</a></li>
-                            <!--<li><a href="contact.html">Contact</a></li>-->
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-            <!-- Body -->
-            <div class="jumbotron">
-                <h1>I'm a general-purpose developer</h1>
-            </div>
-
             <div>
                 <div class="col-md-1"></div>
-                <div class="container col-md-8">
+                <div class="container col-md-7 col-lg-8">
 
-                    <h2>Contact Me</h2>
+                    <div class="col-md-6 text-center">
+                        <img class="img-responsive img-circle center-block" src="res/profile_pic.jpg">
 
-                    <div class="col-md-4">
-                        <img class="img-responsive img-circle" src="res/profile_pic.jpg">
+                        <a href="/Reline"><img src="res/github_logo.png" class="icon"></a>
+                        <a href="https://www.linkedin.com/in/nathanreline"><img src="res/linkedin_logo.png" class="icon"></a>
+                        <a href="http://stackoverflow.com/users/4780750/reline"><img src="res/stackoverflow_logo.png" class="icon"></a>
+                        <br><a href="mailto:nathanielreline@gmail.com">nathanielreline@gmail.com</a>
                     </div>
 
-                    <div class="col-md-8 contact-info">
-                        <img src="res/github_logo.png" style="width: 35px;">
-                        <h3 class="contact-link"><a href="/Reline">GitHub</a></h3>
-                        <br><br>
-
-                        <img src="res/linkedin_logo.png" style="width: 35px;">
-                        <h3 class="contact-link"><a href="https://www.linkedin.com/in/nathanreline">LinkedIn</a></h3>
-                        <br><br>
-
-                        <img src="res/stackoverflow_logo.png" style="width: 35px;">
-                        <h3 class="contact-link"><a href="http://stackoverflow.com/users/4780750/reline">StackOverflow</a></h3>
-                        <br><br>
-
-                        <img src="res/gmail_logo.png" style="width: 35px;">
-                        <h3 class="contact-link"><a href="mailto:nathanielreline@gmail.com">Gmail</a></h3>
+                    <div class="col-md-6">
+                        &emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac convallis lorem, at
+                        pulvinar diam. Aliquam placerat suscipit venenatis. Nam aliquet nunc id velit rutrum
+                        consectetur. Curabitur commodo in tellus nec efficitur. Donec ornare elementum risus, et rhoncus
+                        turpis molestie vel. Curabitur a sem sit amet mi tempor tincidunt. Integer sit amet molestie
+                        est. Vivamus lacus odio, viverra in purus vitae, finibus consequat ex. Suspendisse potenti.
+                        Quisque id posuere nibh. Ut accumsan a neque eu sollicitudin. Quisque ante justo, scelerisque
+                        faucibus quam non, fermentum ornare lorem. Duis sed risus congue, malesuada nulla sit amet,
+                        rhoncus ligula. Ut pretium dapibus convallis. Nulla rutrum ullamcorper elit, sit amet ornare
+                        purus viverra vitae. Proin ultricies in sapien ac rhoncus.
                     </div>
                 </div>
 
-                <div class="rss-feed col-md-3 hidden-sm hidden-xs">
+                <div class="rss-feed hidden-xs hidden-sm col-md-4 col-lg-3">
                     <div class="well" style="text-align: center">
                         <h2>GitHub Activity</h2>
                     </div>
@@ -88,6 +84,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Footer -->
         <footer class="navbar-fixed-bottom text-center">
             Website made by Nathan Reline
