@@ -2,6 +2,7 @@ body {
     font: 400 15px/1.8 'Source Sans Pro', sans-serif, Trebuchet, Veranda, Geneva;
     color: #777;
     margin-top: 3%;
+
 }
 
 h3, h4 {
@@ -11,7 +12,7 @@ h3, h4 {
 }
 
 .main {
-    margin-bottom: 5%;
+    margin-bottom: 20%;
 }
 
 .about {
