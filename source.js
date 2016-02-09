@@ -9,8 +9,10 @@ function githubFeed($user) { // string param for GitHub username
         type: "GET",
         url: "http://cors.io/?u=https://github.com/" + $user + ".atom",
         cache: false,
+        dataType: 'xml',
         success: function(result) {
             console.log($user + ".atom loaded");
+            console.log(result);
 
             var atom = $("<span />", { html: result }).text();
             var githubActivity = $("#githubActivity");
