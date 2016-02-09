@@ -12,9 +12,8 @@ function githubFeed($user) { // string param for GitHub username
         dataType: 'xml',
         success: function(result) {
             console.log($user + ".atom loaded");
-            console.log(result);
 
-            var atom = $("<span />", { html: result }).text();
+            var atom = $("<span />", { html: result.firstChild }).text();
             var githubActivity = $("#githubActivity");
             githubActivity.html(atom);
             var children = githubActivity.children();
@@ -29,6 +28,7 @@ function githubFeed($user) { // string param for GitHub username
                     $(this).attr('target', "_blank");
                 }
             });
+
         },
         error: function (err) {
             var githubActivity = $("#githubActivity");
