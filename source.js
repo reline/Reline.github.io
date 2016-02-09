@@ -29,6 +29,8 @@ function githubFeed($user) { // string param for GitHub username
             });
         },
         error: function (err) {
+            var githubActivity = $("#githubActivity");
+            githubActivity.html(JSON.stringify(err, null, 2));
             console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
         },
         async: true
