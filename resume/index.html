@@ -11,13 +11,13 @@
     <title>Nathan Reline</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/source.css" rel="stylesheet">
+    <link href="../css/source.css" rel="stylesheet">
 
     <!-- Google API Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
@@ -44,13 +44,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="res/Reline_logo_white.png" class="logo pull-left"/></a>
+                    <a class="navbar-brand" href="#"><img src="../res/Reline_logo_white.png" class="logo pull-left"/></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="../">Home</a></li>
                         <li class="dropdown">
-                            <a href="projects" onclick="window.open('projects', '_self');" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
+                            <a href="../projects" onclick="projects()" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-header">Android</li>
                                 <li><a href="#">Action</a></li>
@@ -67,7 +67,7 @@
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="objectives" onclick="window.open('objectives', '_self');" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Objectives<span class="caret"></span></a>
+                            <a href="../objectives" onclick="objectives()" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Objectives<span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Objective 1</a></li>
                                 <li><a href="#">Objective 2</a></li>
@@ -77,43 +77,15 @@
                                 <li><a href="#">Objective 6</a></li>
                             </ul>
                         </li>
-                        <li><a href="SIP">SIP</a></li>
-                        <li><a href="resume">Resume</a></li>
-                        <li><a href="about">About</a></li>
+                        <li><a href="../SIP">SIP</a></li>
+                        <li class="active"><a href="#">Resume</a></li>
+                        <li><a href="../about">About</a></li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div><!--/.container-fluid -->
         </nav>
 
-        <!-- Main component for a primary marketing message or call to action -->
-        <div class="jumbotron text-center">
-            <h1>Nathan Reline</h1>
-            <p>Full-Stack Developer</p>
-        </div>
-
-    </div> <!-- /container -->
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-            <div class="col-lg-6">
-                <img class="img-circle" src="res/Java_Logo.svg" alt="Java image" width="140" height="140">
-                <h2>Java</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-default" href="#" role="button">Projects &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-6">
-                <img src="res/cplusplus_logo.png" alt="C++ image" width="200" height="140">
-                <h2>C++</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <p><a class="btn btn-default" href="#" role="button">Projects &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
+        <iframe id="resume" class="center-block" src="https://drive.google.com/file/d/0BwBrFpgJAcbDdzQ5VkpYd0JqQnM/preview" width="100%"></iframe>
 
         <!-- FOOTER -->
         <footer class="text-center">
@@ -121,17 +93,19 @@
             <p>Website created by Nathan Reline</p>
         </footer>
 
-    </div><!-- /.container -->
+    </div> <!-- /container -->
+
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
     <!-- js source -->
-    <script src="js/source.js"></script>
+    <script src="../js/source.js"></script>
 </body>
 </html>

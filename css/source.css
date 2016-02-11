@@ -1,0 +1,79 @@
+body {
+    font: 400 15px/1.8 'Source Sans Pro', sans-serif;
+    padding-top: 70px;
+}
+
+/* Navigation bar */
+.logo {
+    max-height: 2em;
+    padding-right: .5em;
+    margin-top: -.45em;
+}
+
+.navbar {
+    font-family: 'Droid Sans', sans-serif, Trebuchet, Veranda, Geneva;
+    background-color: #101010;
+    margin-bottom: 20px;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #d5d5d5 !important;
+}
+
+.navbar li a:hover {
+    color: #fff !important;
+    background-color: #494950 !important;
+}
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+
+button.navbar-toggle,
+button.navbar-toggle.collapsed,
+.navbar-default,
+.navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #101010; !important;
+    border: hidden #101010; !important;
+}
+
+.open > .dropdown-toggle {
+    color: #fff !important;
+    background-color: #494950 !important;
+}
+
+.dropdown-menu {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid #101010;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #101010;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #494950;
+}
+
+footer {
+    margin-top: 50px;
+}

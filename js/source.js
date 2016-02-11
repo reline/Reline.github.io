@@ -1,8 +1,23 @@
 $(document).ready(function() {
-    // $("body").load("underconstruction.html");
-
+    resizeFrame(document.getElementById('resume'));
     githubFeed("Reline");
 });
+
+window.onresize = function() {
+    resizeFrame(document.getElementById('resume'));
+};
+
+function resizeFrame(f) {
+    f.style.height = f.clientWidth + "px";
+}
+
+function objectives() {
+    this.open("../objectives", "_self");
+}
+
+function projects() {
+    this.open("../projects", "_self");
+}
 
 function githubFeed($user) { // string param for GitHub username
     $.ajax({
@@ -28,7 +43,6 @@ function githubFeed($user) { // string param for GitHub username
                     $(this).attr('target', "_blank");
                 }
             });
-
         },
         error: function (err) {
             var githubActivity = $("#githubActivity");
