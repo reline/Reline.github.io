@@ -1,15 +1,18 @@
 $(document).ready(function() {
-    resizeFrame(document.getElementById('resume'));
+    resizeFrame(document.getElementsByClassName('document'));
     githubFeed("Reline");
 });
 
 window.onresize = function() {
-    resizeFrame(document.getElementById('resume'));
+    resizeFrame(document.getElementsByClassName('document'));
 };
 
 function resizeFrame(f) {
-    if (f != null)
-        f.style.height = f.clientWidth + "px";
+    if (f != null) {
+        for (var i = 0; i < f.length; i++) {
+            f[i].style.height = f[i].clientWidth + "px";
+        }
+    }
 }
 
 function objectives() {
