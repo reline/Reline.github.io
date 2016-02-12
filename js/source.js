@@ -1,6 +1,6 @@
 $(document).ready(function() {
     resizeFrame(document.getElementById('resume'));
-    githubFeed("Reline");
+    // githubFeed("Reline");
 });
 
 window.onresize = function() {
@@ -8,7 +8,8 @@ window.onresize = function() {
 };
 
 function resizeFrame(f) {
-    f.style.height = f.clientWidth + "px";
+    if (f != null)
+        f.style.height = f.clientWidth + "px";
 }
 
 function objectives() {

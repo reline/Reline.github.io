@@ -74,6 +74,32 @@ button.navbar-toggle.collapsed,
     background: #494950;
 }
 
+.project-category img {
+    float: left;
+    margin-right: 5px;
+    max-height: 40px;
+}
+
+.project-category h1 {
+    position: relative;
+}
+
+.project-image {
+    max-height: 400px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.spacer {
+    margin-top: 100px;
+}
+
+.anchor {
+    display: block;
+    height: 70px;
+    margin-top: -70px;
+    visibility: hidden;
+}
+
 footer {
     margin-top: 50px;
 }
