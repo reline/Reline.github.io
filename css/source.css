@@ -146,6 +146,12 @@ button.navbar-toggle.collapsed,
     color:#ed6a43
 }
 
+.github-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 40vh;
+}
+
 /* Footer */
 footer {
     margin-top: 50px;
