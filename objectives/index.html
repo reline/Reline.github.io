@@ -32,94 +32,316 @@
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img src="../res/Reline_logo_white.png" class="logo pull-left"/></a>
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="../res/Reline_logo_white.png" class="logo pull-left"/></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="../">Home</a></li>
+                        <li class="dropdown">
+                            <a href="../projects" onclick="window.open('../projects', '_self');" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">Android</li>
+                                <li><a href="../projects#asobouyo">Asobouyo!</a></li>
+                                <li><a href="../projects#earthquake-hazard">Earthquake Hazards</a></li>
+                                <li><a href="../projects#runner">Project Runner</a></li>
+                                <li><a href="../projects#tag">Tag! You're It!</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Java</li>
+                                <li><a href="../projects#jft">Java Function Tester</a></li>
+                                <li><a href="../projects#perspective-rectifier">Perspective Rectifier</a></li>
+                                <li><a href="../projects#ptu">PTU</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">C/C++</li>
+                                <li><a href="../projects#appt-mgr">Appointment Manager</a></li>
+                                <li><a href="../projects#nespi">NESPi</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Web</li>
+                                <li><a href="../projects#reline">Reline.github.io</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Pygame</li>
+                                <li><a href="../projects#asteroids">Asteroids</a></li>
+                                <li><a href="../projects#bob-jay-breakout">Bob & Jay Breakout</a></li>
+                                <li><a href="../projects#fred-quest">Frederick's Quest for Facial Hair</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown active">
+                            <a href="../objectives" onclick="window.open('../objectives', '_self');" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Objectives<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#one">Objective 1</a></li>
+                                <li><a href="#two">Objective 2</a></li>
+                                <li><a href="#three">Objective 3</a></li>
+                                <li><a href="#four">Objective 4</a></li>
+                                <li><a href="#five">Objective 5</a></li>
+                                <li><a href="#six">Objective 6</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../SIP">SIP</a></li>
+                        <li><a href="../resume">Resume</a></li>
+                        <li><a href="../about">About</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
+
+    </div> <!-- /container -->
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+        <!-- START THE OBJECTIVE ONE FEATURETTES -->
+
+        <span class="anchor" id="one"></span>
+
+        <div class="well well-lg">
+            <h2>Objective 1</h2>
+            <p>Follow a software development process to analyze a problem, and to design, build, and test software solutions.</p>
+        </div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Project 1 <a href="https://github.com/Reline/sandbox" class="btn btn-primary">GitHub</a><br>
+                    <span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">How this project achieved the objective.</p>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../">Home</a></li>
-                    <li class="dropdown">
-                        <a href="../projects" onclick="window.open('../projects', '_self');" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li class="dropdown-header">Android</li>
-                            <li><a href="../projects#asobouyo">Asobouyo!</a></li>
-                            <li><a href="../projects#earthquake-hazard">Earthquake Hazards</a></li>
-                            <li><a href="../projects#runner">Project Runner</a></li>
-                            <li><a href="../projects#tag">Tag! You're It!</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Java</li>
-                            <li><a href="../projects#jft">Java Function Tester</a></li>
-                            <li><a href="../projects#perspective-rectifier">Perspective Rectifier</a></li>
-                            <li><a href="../projects#ptu">PTU</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">C/C++</li>
-                            <li><a href="../projects#appt-mgr">Appointment Manager</a></li>
-                            <li><a href="../projects#nespi">NESPi</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Web</li>
-                            <li><a href="../projects#reline">Reline.github.io</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Pygame</li>
-                            <li><a href="../projects#asteroids">Asteroids</a></li>
-                            <li><a href="../projects#bob-jay-breakout">Bob & Jay Breakout</a></li>
-                            <li><a href="../projects#fred-quest">Frederick's Quest for Facial Hair</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown active">
-                        <a href="../objectives" onclick="window.open('../objectives', '_self');" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Objectives<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#one">Objective 1</a></li>
-                            <li><a href="#two">Objective 2</a></li>
-                            <li><a href="#three">Objective 3</a></li>
-                            <li><a href="#four">Objective 4</a></li>
-                            <li><a href="#five">Objective 5</a></li>
-                            <li><a href="#six">Objective 6</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../SIP">SIP</a></li>
-                    <li><a href="../resume">Resume</a></li>
-                    <li><a href="../about">About</a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-    </nav>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block project-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="140" height="140">
+            </div>
+        </div>
 
-</div> <!-- /container -->
+        <hr class="featurette-divider">
 
-<!-- Marketing messaging and featurettes
-================================================== -->
-<!-- Wrap the rest of the page in another container to center all the content. -->
+        <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">Project 2 <a href="https://github.com/Reline/sandbox" class="btn btn-primary">GitHub</a>
+                    <br><span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">How this project achieved the objective.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img class="featurette-image img-responsive center-block project-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="140" height="140">
+            </div>
+        </div>
 
-<div class="container marketing">
+        <hr class="featurette-divider">
 
-    <!-- FOOTER -->
-    <footer class="text-center">
-        <!--<p class="pull-right"><a href="#">Back to top</a></p>-->
-        <p>Website created by Nathan Reline</p>
-    </footer>
+        <!-- /END THE OBJECTIVE ONE FEATURETTES -->
 
-</div><!-- /.container -->
+        <!-- START THE OBJECTIVE TWO FEATURETTES -->
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
-<script src="../bootstrap/js/bootstrap.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../js/ie10-viewport-bug-workaround.js"></script>
-<!-- js source -->
-<script src="../js/source.js"></script>
+        <span class="anchor" id="two"></span>
+
+        <div class="well well-lg">
+            <h2>Objective 2</h2>
+            <p>Develop software development skills using more than one programming language and development environment.</p>
+        </div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Project 1 <a href="https://github.com/Reline/sandbox" class="btn btn-primary">GitHub</a><br>
+                    <span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">How this project achieved the objective.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block project-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="140" height="140">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">Project 2 <a href="https://github.com/Reline/sandbox" class="btn btn-primary">GitHub</a>
+                    <br><span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">How this project achieved the objective.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img class="featurette-image img-responsive center-block project-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="140" height="140">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE OBJECTIVE TWO FEATURETTES -->
+
+        <!-- START THE OBJECTIVE THREE FEATURETTES -->
+
+        <span class="anchor" id="three"></span>
+
+        <div class="well well-lg">
+            <h2>Objective 3</h2>
+            <p>Design and implement software solutions across multiple platforms.</p>
+        </div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Project 1 <a href="https://github.com/Reline/sandbox" class="btn btn-primary">GitHub</a><br>
+                    <span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">How this project achieved the objective.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block project-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="140" height="140">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">Project 2 <a href="https://github.com/Reline/sandbox" class="btn btn-primary">GitHub</a>
+                    <br><span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">How this project achieved the objective.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img class="featurette-image img-responsive center-block project-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="140" height="140">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE OBJECTIVE THREE FEATURETTES -->
+
+        <!-- START THE OBJECTIVE FOUR FEATURETTES -->
+
+        <span class="anchor" id="four"></span>
+
+        <div class="well well-lg">
+            <h2>Objective 4</h2>
+            <p>Design and implement software solutions for mobile devices, embedded systems, or standalone systems.</p>
+        </div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Project 1 <a href="https://github.com/Reline/sandbox" class="btn btn-primary">GitHub</a><br>
+                    <span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">How this project achieved the objective.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block project-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="140" height="140">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">Project 2 <a href="https://github.com/Reline/sandbox" class="btn btn-primary">GitHub</a>
+                    <br><span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">How this project achieved the objective.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img class="featurette-image img-responsive center-block project-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="140" height="140">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE OBJECTIVE FOUR FEATURETTES -->
+
+        <!-- START THE OBJECTIVE FIVE FEATURETTES -->
+
+        <span class="anchor" id="five"></span>
+
+        <div class="well well-lg">
+            <h2>Objective 5</h2>
+            <p>Document the planning and development of software applications using industry standard tools, techniques, and processes.</p>
+        </div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Project 1 <a href="https://github.com/Reline/sandbox" class="btn btn-primary">GitHub</a><br>
+                    <span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">How this project achieved the objective.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block project-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="140" height="140">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">Project 2 <a href="https://github.com/Reline/sandbox" class="btn btn-primary">GitHub</a>
+                    <br><span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">How this project achieved the objective.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img class="featurette-image img-responsive center-block project-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="140" height="140">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE OBJECTIVE FIVE FEATURETTES -->
+
+        <!-- START THE OBJECTIVE SIX FEATURETTES -->
+
+        <span class="anchor" id="six"></span>
+
+        <div class="well well-lg">
+            <h2>Objective 6</h2>
+            <p>Within software solutions describe, implement, and analyze data structure techniques such as lists, trees, hash tables, graphs, along with sorting and searching algorithms.</p>
+        </div>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Project 1 <a href="https://github.com/Reline/sandbox" class="btn btn-primary">GitHub</a><br>
+                    <span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">How this project achieved the objective.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block project-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="140" height="140">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">Project 2 <a href="https://github.com/Reline/sandbox" class="btn btn-primary">GitHub</a>
+                    <br><span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">How this project achieved the objective.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img class="featurette-image img-responsive center-block project-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="140" height="140">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE OBJECTIVE SIX FEATURETTES -->
+
+        <!-- FOOTER -->
+        <footer class="text-center">
+            <!--<p class="pull-right"><a href="#">Back to top</a></p>-->
+            <p>Website created by Nathan Reline</p>
+        </footer>
+
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <!-- js source -->
+    <script src="../js/source.js"></script>
 </body>
 </html>
