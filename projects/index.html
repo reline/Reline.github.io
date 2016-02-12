@@ -57,6 +57,7 @@
                                 <li><a href="#earthquake-hazard">Earthquake Hazards</a></li>
                                 <li><a href="#runner">Project Runner</a></li>
                                 <li><a href="#tag">Tag! You're It!</a></li>
+                                <li><a href="#intermediary">Intermediary</a></li>
                                 <li role="separator" class="divider"></li>
                                 <li class="dropdown-header">Java</li>
                                 <li><a href="#jft">Java Function Tester</a></li>
@@ -70,7 +71,7 @@
                                 <li class="dropdown-header">Web</li>
                                 <li><a href="#reline">Reline.github.io</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li class="dropdown-header">Pygame</li>
+                                <li class="dropdown-header">Python</li>
                                 <li><a href="#asteroids">Asteroids</a></li>
                                 <li><a href="#bob-jay-breakout">Bob & Jay Breakout</a></li>
                                 <li><a href="#fred-quest">Frederick's Quest for Facial Hair</a></li>
@@ -184,6 +185,20 @@
 
         <hr class="featurette-divider">
 
+        <span class="anchor" id="intermediary"></span>
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Intermediary <a href="https://github.com/Reline/Intermediary" class="btn btn-primary">GitHub</a><br>
+                    <span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">An intermediary app for those who have trouble speaking their own or other languages.
+                    Choose any supported locale on Android to say any text you input. Only installed languages are supported.
+                    Default language is Japanese. Use case example: hearing Kanji pronounced to skip looking up furigana.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block project-image" src="../res/intermediary-screenshot.png">
+            </div>
+        </div>
+
         <!-- /END THE ANDROID FEATURETTES -->
 
         <div class="spacer"></div>
@@ -211,7 +226,6 @@
             </div>
             <div class="col-md-5">
                 <img class="featurette-image img-responsive center-block project-image" src="../res/jft-screenshot.PNG">
-                <code></code>
             </div>
         </div>
 
@@ -248,6 +262,180 @@
         <hr class="featurette-divider">
 
         <!-- /END THE JAVA FEATURETTES -->
+
+        <!-- START THE CPLUSPLUS FEATURETTES -->
+
+        <span class="anchor" id="cplusplus"></span>
+
+        <div class="project-category">
+            <img class="img-responsive" src="../res/cplusplus_logo.png">
+            <h1>C++</h1>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <span class="anchor" id="appt-mgr"></span>
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Appointment Manager <a href="https://github.com/Reline/AppointmentManager" class="btn btn-primary">GitHub</a><br>
+                    <span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">While this project is not exceptionally functional at recording events, it served as a
+                great milestone in my early programming days and shows my familiarity with the language. The building
+                    blocks of this application consist of my own custom built String, DateTime, and Array classes.
+                    Shown here is one of my personal favorite snippets.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="blob-code blob-code-inner"><span class="pl-k">void</span> <span class="pl-en">MyString::Insert</span>(<span class="pl-k">const</span> MyString &amp; aMyString, <span class="pl-k">int</span> index)</div>
+                <div class="blob-code blob-code-inner">{</div>
+                <div class="blob-code blob-code-inner">	<span class="pl-k">int</span> lengthOfAMyString = aMyString.<span class="pl-c1">Length</span>();</div>
+                <div class="blob-code blob-code-inner">	<span class="pl-k">int</span> newCapacity = _length + lengthOfAMyString;</div>
+                <div class="blob-code blob-code-inner">	_capacity = newCapacity;</div>
+                <div class="blob-code blob-code-inner">	<span class="pl-k">char</span> *tempStr = <span class="pl-k">new</span> <span class="pl-k">char</span>[_capacity + <span class="pl-c1">1</span>];</div>
+                <div class="blob-code blob-code-inner">	<span class="pl-k">for</span>(<span class="pl-k">int</span> i = <span class="pl-c1">0</span>; i &lt; <span class="pl-c1">index</span>; i++)</div>
+                <div class="blob-code blob-code-inner">	{</div>
+                <div class="blob-code blob-code-inner">		tempStr[i] = _string[i];</div>
+                <div class="blob-code blob-code-inner">	}</div>
+                <div class="blob-code blob-code-inner">	tempStr[<span class="pl-c1">index</span>] = <span class="pl-s"><span class="pl-pds">'</span><span class="pl-cce">\0</span><span class="pl-pds">'</span></span>;</div>
+                <div class="blob-code blob-code-inner">	<span class="pl-c1">strcat</span>(tempStr, aMyString.<span class="pl-c1">_cstr</span>());</div>
+                <div class="blob-code blob-code-inner">	<span class="pl-k">for</span>(<span class="pl-k">int</span> i = <span class="pl-c1">0</span>; i &lt;= _length - <span class="pl-c1">index</span>; i++)</div>
+                <div class="blob-code blob-code-inner">	{</div>
+                <div class="blob-code blob-code-inner">		tempStr[<span class="pl-c1">index</span> + lengthOfAMyString + i] = _string[<span class="pl-c1">index</span> + i];</div>
+                <div class="blob-code blob-code-inner">	}</div>
+                <div class="blob-code blob-code-inner">	_length = _capacity;</div>
+                <div class="blob-code blob-code-inner">	<span class="pl-k">delete []</span> _string;</div>
+                <div class="blob-code blob-code-inner">	_string = tempStr;</div>
+                <div class="blob-code blob-code-inner">}</div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <span class="anchor" id="nespi"></span>
+        <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">NESPi <a href="https://github.com/Reline/nespi" class="btn btn-primary">GitHub</a>
+                    <br><span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">The Nintendo Entertainment System Pi is a portable Raspberry Pi capable of playing NES
+                    games. It runs on ArchLinux due it being lightweight, uses Nestopia to emulate NES games using ROMs,
+                    and uses various other hardware for portability. For example, the controller was made using an
+                    Arduino Leonardo board I programmed in C.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img class="featurette-image img-responsive center-block project-image" src="../res/mario_bros.png">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE CPLUSPLUS FEATURETTES -->
+
+        <!-- START THE WEB FEATURETTES -->
+
+        <span class="anchor" id="web"></span>
+
+        <div class="project-category">
+            <img class="img-responsive" src="../res/web-logo.png">
+            <h1>Web</h1>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <span class="anchor" id="reline"></span>
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Reline.github.io <a href="https://github.com/Reline/reline.github.io" class="btn btn-primary">GitHub</a><br>
+                    <span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">This website! I also made a script to dynamically retrieve a user's GitHub feed using jQuery.</p>
+            </div>
+            <div class="col-md-5">
+                <div id="githubActivity" class="github">
+                    <div class="blob-code blob-code-inner">    <span class="pl-smi">$</span>.<span class="pl-en">ajax</span>({</div>
+                    <div class="blob-code blob-code-inner">        type<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>GET<span class="pl-pds">"</span></span>,</div>
+                    <div class="blob-code blob-code-inner">        url<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>http://cors.io/?u=https://github.com/<span class="pl-pds">"</span></span> <span class="pl-k">+</span> $user <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>.atom<span class="pl-pds">"</span></span>,</div>
+                    <div class="blob-code blob-code-inner">        cache<span class="pl-k">:</span> <span class="pl-c1">false</span>,</div>
+                    <div class="blob-code blob-code-inner">        dataType<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>xml<span class="pl-pds">'</span></span>,</div>
+                    <div class="blob-code blob-code-inner">        <span class="pl-en">success</span><span class="pl-k">:</span> <span class="pl-k">function</span>(<span class="pl-smi">result</span>) {</div>
+                    <div class="blob-code blob-code-inner">            <span class="pl-en">console</span>.<span class="pl-c1">log</span>($user <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">"</span>.atom loaded<span class="pl-pds">"</span></span>);</div>
+                    <div class="blob-code blob-code-inner">            <span class="pl-k">var</span> atom <span class="pl-k">=</span> <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>&lt;span /&gt;<span class="pl-pds">"</span></span>, { html<span class="pl-k">:</span> <span class="pl-smi">result</span>.<span class="pl-c1">firstChild</span> }).<span class="pl-c1">text</span>();</div>
+                    <div class="blob-code blob-code-inner">            <span class="pl-k">var</span> githubActivity <span class="pl-k">=</span> <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>#githubActivity<span class="pl-pds">"</span></span>);</div>
+                    <div class="blob-code blob-code-inner">            <span class="pl-smi">githubActivity</span>.<span class="pl-en">html</span>(atom);</div>
+                    <div class="blob-code blob-code-inner">            <span class="pl-k">var</span> children <span class="pl-k">=</span> <span class="pl-smi">githubActivity</span>.<span class="pl-en">children</span>();</div>
+                    <div class="blob-code blob-code-inner">            <span class="pl-smi">githubActivity</span>.<span class="pl-en">html</span>(children);</div>
+                    <div class="blob-code blob-code-inner">            <span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">'</span>.github a<span class="pl-pds">'</span></span>).<span class="pl-en">each</span>(<span class="pl-k">function</span> () {</div>
+                    <div class="blob-code blob-code-inner">                <span class="pl-k">var</span> href <span class="pl-k">=</span> <span class="pl-en">$</span>(<span class="pl-v">this</span>).<span class="pl-en">attr</span>(<span class="pl-s"><span class="pl-pds">'</span>href<span class="pl-pds">'</span></span>);</div>
+                    <div class="blob-code blob-code-inner">                <span class="pl-k">if</span> (href) {</div>
+                    <div class="blob-code blob-code-inner">                    href <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>https://github.com<span class="pl-pds">"</span></span> <span class="pl-k">+</span> href;</div>
+                    <div class="blob-code blob-code-inner">                    <span class="pl-en">$</span>(<span class="pl-v">this</span>).<span class="pl-en">attr</span>(<span class="pl-s"><span class="pl-pds">'</span>href<span class="pl-pds">'</span></span>, href);</div>
+                    <div class="blob-code blob-code-inner">                    <span class="pl-en">$</span>(<span class="pl-v">this</span>).<span class="pl-en">attr</span>(<span class="pl-s"><span class="pl-pds">'</span>target<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">"</span>_blank<span class="pl-pds">"</span></span>);</div>
+                    <div class="blob-code blob-code-inner">                }</div>
+                    <div class="blob-code blob-code-inner">            });</div>
+                    <div class="blob-code blob-code-inner">        },</div>
+                    <div class="blob-code blob-code-inner">        async<span class="pl-k">:</span> <span class="pl-c1">true</span></div>
+                    <div class="blob-code blob-code-inner">    });</div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE WEB FEATURETTES -->
+
+        <!-- START THE PYTHON FEATURETTES -->
+
+        <span class="anchor" id="python"></span>
+
+        <div class="project-category">
+            <img class="img-responsive" src="../res/python-logo.png">
+            <h1>Python</h1>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <span class="anchor" id="asteroids"></span>
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Asteroids <a href="https://github.com/Reline/AsteroidsProject" class="btn btn-primary">GitHub</a><br>
+                    <span class="text-muted"><small>Nathan Reline</small></span></h2>
+                <p class="lead">My very first solo program and game which was built in PyGame, Asteroids! Art inspired by Geometry Wars.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block project-image" src="../res/asteroids.png">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <span class="anchor" id="bob-jay-breakout"></span>
+        <div class="row featurette">
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading">Bob & Jay Breakout <a href="https://github.com/Reline/Bob-Jay-Breakout" class="btn btn-primary">GitHub</a>
+                    <br><span class="text-muted"><small>Eric Dutton, Christian Martinez, Nathan Reline, Austin Ronquillo</small></span></h2>
+                <p class="lead">Created during Tech Jam 2014, the theme of Bob & Jay consists of them breaking out of
+                    prison after a convenient earthquake. I was the sole programmer on this team project.</p>
+            </div>
+            <div class="col-md-5 col-md-pull-7">
+                <img class="featurette-image img-responsive center-block project-image" src="../res/Bob&Jay.png">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <span class="anchor" id="fred-quest"></span>
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Frederick's Quest for Facial Hair <a href="https://github.com/Reline/FrederickQuestForFacialHair" class="btn btn-primary">GitHub</a>
+                    <br><span class="text-muted"><small>Kyle Huntsman, Nathan Reline, Austin Ronquillo</small></span></h2>
+                <p class="lead">Frederick seeks different styles of facial hair, which each give him different and
+                    mysterious powers. Developed during the Fall Game Jam of 2014.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive center-block project-image" src="../res/frederick.png">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE PYTHON FEATURETTES -->
 
         <!-- FOOTER -->
         <footer class="text-center">
