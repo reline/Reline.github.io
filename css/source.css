@@ -156,3 +156,12 @@ button.navbar-toggle.collapsed,
 footer {
     margin-top: 50px;
 }
+
+.footer {
+    display: inline-block;
+}
+
+footer img {
+    float: left;
+    max-height: 2em;
+}
