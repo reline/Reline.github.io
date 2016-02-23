@@ -47,10 +47,11 @@ function githubFeed($user) { // string param for GitHub username
                     $(this).attr('target', "_blank");
                 }
             });
+
+            $("#github-container").addClass("github-container");
+
         },
         error: function (err) {
-            var githubContainer = $(".github-container");
-            githubContainer.maxHeight = "default";
             console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
         },
         async: true
