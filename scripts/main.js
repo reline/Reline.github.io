@@ -1,1 +1,51 @@
-"use strict";function resizeFrame(t){if(null!=t)for(var e=0;e<t.length;e++)t[e].style.height=t[e].clientWidth+"px"}function githubFeed(t){$.ajax({type:"GET",url:"http://cors.io/?u=https://github.com/"+t+".atom",cache:!1,dataType:"xml",success:function(e){console.log(t+".atom loaded");var n=$("<span />",{html:e.firstChild}).text(),i=$("#githubActivity");i.html(n);var a=i.children();i.html(a),$(".github a").each(function(){var t=$(this).attr("href");t&&(t="https://github.com"+t,$(this).attr("href",t),$(this).attr("target","_blank"))}),$("#github-container").addClass("github-container")},error:function(t){console.log("AJAX error in request: "+JSON.stringify(t,null,2))},async:!0})}$(document).ready(function(){resizeFrame(document.getElementsByClassName("document")),githubFeed("Reline")}),window.onresize=function(){resizeFrame(document.getElementsByClassName("document"))},function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var t=document.createElement("style");t.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}")),document.querySelector("head").appendChild(t)}}();
+$(document).ready(function() {
+  resizeFrame(document.getElementsByClassName('document'));
+  githubFeed("Reline");
+});
+
+window.onresize = function() {
+  resizeFrame(document.getElementsByClassName('document'));
+};
+
+function resizeFrame(f) {
+  if (f != null) {
+    for (var i = 0; i < f.length; i++) {
+      f[i].style.height = f[i].clientWidth + "px";
+    }
+  }
+}
+
+function githubFeed($user) { // string param for GitHub username
+  $.ajax({
+    type: "GET",
+    url: "http://cors.io/?u=https://github.com/" + $user + ".atom",
+    cache: false,
+    dataType: 'xml',
+    success: function(result) {
+      console.log($user + ".atom loaded");
+
+      var atom = $("<span />", { html: result.firstChild }).text();
+      var githubActivity = $("#githubActivity");
+      githubActivity.html(atom);
+      var children = githubActivity.children();
+      githubActivity.html(children);
+
+      $('.github a').each(function () {
+        var href = $(this).attr('href');
+
+        if (href) {
+          href = "https://github.com" + href;
+          $(this).attr('href', href);
+          $(this).attr('target', "_blank");
+        }
+      });
+
+      $("#github-container").addClass("github-container");
+
+    },
+    error: function (err) {
+      console.log("AJAX error in request: " + JSON.stringify(err, null, 2));
+    },
+    async: true
+  })
+}
