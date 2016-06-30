@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="html5shiv" level="application" />
+    <orderEntry type="library" name="respond" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="bef2c9d50833ad16d4de" level="application" />
+    <orderEntry type="library" name="Reline.github.io node_modules" level="project" />
+    <orderEntry type="library" name="e88f9ea9eaf4511e63c4" level="application" />
+    <orderEntry type="library" name="5072d73594af665c7973" level="application" />
+    <orderEntry type="library" name="d75c92e65a6339491210" level="application" />
+    <orderEntry type="library" name="59c1435e280987415143" level="application" />
+    <orderEntry type="library" name="086b2a63f0a165c2761398f13ca590ea" level="application" />
+  </component>
+</module>
