@@ -1,5 +1,17 @@
-apple-touch-icon.png
-bower_components
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directory
 node_modules
+bower_components
+
+# Cache directories
+.npm
 .tmp
-.idea
+
+# distribution folder
+dist
+
+.sass-cache
