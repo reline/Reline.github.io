@@ -3,7 +3,7 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('relinegithubioApp'));
+  beforeEach(module('relineApp'));
 
   var MainCtrl,
     scope;

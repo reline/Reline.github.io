@@ -1,18 +1,6 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-
-# Dependency directory
-node_modules
-bower_components
-
-# Cache directories
-.npm
-.tmp
-
-# distribution folder
-dist
-
-.sass-cache
-.idea
+/node_modules
+/dist
+/.tmp
+/.sass-cache
+/bower_components
+/.idea

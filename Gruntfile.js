@@ -1,4 +1,4 @@
-// Generated on 2016-10-21 using generator-angular 0.15.1
+// Generated on 2016-10-22 using generator-angular 0.15.1
 'use strict';
 
 // # Globbing
@@ -224,7 +224,7 @@ module.exports = function (grunt) {
         src: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
         ignorePath: /(\.\.\/){1,2}bower_components\//
       }
-    }, 
+    },
 
     // Compiles Sass to CSS and generates necessary files if requested
     compass: {
@@ -310,7 +310,7 @@ module.exports = function (grunt) {
     // cssmin: {
     //   dist: {
     //     files: {
-    //       '<%= yeoman.dist %>/styles/main.css': [
+    //       '<%= yeoman.dist %>/styles/material.css': [
     //         '.tmp/styles/{,*/}*.css'
     //       ]
     //     }
@@ -371,7 +371,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       dist: {
         options: {
-          module: 'relinegithubioApp',
+          module: 'relineApp',
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },

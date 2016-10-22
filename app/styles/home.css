@@ -1,0 +1,26 @@
+.profile-card-image__filename {
+  background: url("../images/profile_pic.jpg") center/cover;
+}
+
+.mdl-layout__tab-panel {
+  padding: 48px 8px 8px;
+}
+.mdl-card {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.mdl-card > * {
+  height: auto;
+}
+.mdl-card .mdl-card__supporting-text {
+  margin: 40px;
+  flex-grow: 1;
+  padding: 0;
+  color: inherit;
+  width: calc(100% - 80px);
+}
+.mdl-card__supporting-text h4 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}

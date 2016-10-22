@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name relinegithubioApp.controller:AboutCtrl
+ * @name relineApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the relinegithubioApp
+ * Controller of the relineApp
  */
-angular.module('relinegithubioApp')
+angular.module('relineApp')
   .controller('AboutCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

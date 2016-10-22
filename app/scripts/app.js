@@ -2,18 +2,16 @@
 
 /**
  * @ngdoc overview
- * @name relinegithubioApp
+ * @name relineApp
  * @description
- * # relinegithubioApp
+ * # relineApp
  *
  * Main module of the application.
  */
 angular
-  .module('relinegithubioApp', [
+  .module('relineApp', [
     'ngAnimate',
-    'ngAria',
     'ngCookies',
-    'ngMessages',
     'ngResource',
     'ngRoute',
     'ngSanitize',
