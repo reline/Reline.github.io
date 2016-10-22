@@ -4,3 +4,7 @@
 /* Demo */
 @import 'demo/demo.css';
 @import 'demo/view-source.css';
+
+.profile-card-image__filename {
+  background: url('../images/profile_pic.jpg') center / cover;
+}
