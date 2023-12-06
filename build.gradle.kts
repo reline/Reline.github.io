@@ -1,6 +1,3 @@
-import org.jetbrains.compose.ComposeExtension
-import org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig
-
 plugins {
     kotlin("multiplatform")
     id("org.jetbrains.compose")
@@ -9,36 +6,9 @@ plugins {
 group = "io.github.reline"
 version = "1.0-SNAPSHOT"
 
-afterEvaluate {
-    extensions.findByType(ComposeExtension::class.java)?.apply {
-        val composeCompilerVersion = project.property("compose.compiler.version") as String
-        kotlinCompilerPlugin.set(composeCompilerVersion)
-        val kotlinVersion = project.property("kotlin.version") as String
-        kotlinCompilerPluginArgs.add("suppressKotlinVersionCompatibilityCheck=$kotlinVersion")
-    }
-}
-
 kotlin {
-    wasmJs {
-        moduleName = "website"
-        browser {
-            commonWebpackConfig {
-                outputFileName = "website.js"
-                devServer = (devServer ?: KotlinWebpackConfig.DevServer()).apply {
-                    // Uncomment and configure this if you want to open a browser different from the system default
-                    // open = mapOf(
-                    //     "app" to mapOf(
-                    //         "name" to "google chrome"
-                    //     )
-                    // )
-
-                    static = (static ?: mutableListOf()).apply {
-                        // Serve sources to debug inside browser
-                        add(project.rootDir.path)
-                    }
-                }
-            }
-        }
+    js(IR) {
+        browser()
         binaries.executable()
     }
 
@@ -57,7 +27,22 @@ kotlin {
                 implementation(kotlin("test"))
             }
         }
-        val wasmJsMain by getting
+        val jsMain by getting {
+            dependencies {
+                implementation(compose.html.core) {
+                    version {
+                        require("1.5.10")
+                    }
+                }
+            }
+        }
+    }
+}
+
+afterEvaluate {
+    rootProject.extensions.configure<org.jetbrains.kotlin.gradle.targets.js.nodejs.NodeJsRootExtension> {
+        versions.webpackDevServer.version = "4.0.0"
+        versions.webpackCli.version = "4.10.0"
     }
 }
 
